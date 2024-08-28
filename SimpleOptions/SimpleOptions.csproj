@@ -11,7 +11,7 @@
             A .NET library for seamless configuration management using IOptions.
             It provides utility methods to configure options from configuration sources 
             and integrate them into the service collection and application builder. 
-            his library simplifies the process of setting up configuration options in a .NET application 
+            This library simplifies the process of setting up configuration options in a .NET application 
             by leveraging generics and extension methods.
         </Description>
         <PackageTags>configuration;options;dependency injection;</PackageTags>
