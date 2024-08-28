@@ -15,7 +15,7 @@
             by leveraging generics and extension methods.
         </Description>
         <PackageTags>configuration;options;dependency injection;</PackageTags>
-        <RepositoryUrl></RepositoryUrl>
+        <RepositoryUrl>https://github.com/BeeTwin/SimpleOptions</RepositoryUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression> <!-- Укажите лицензию -->
     </PropertyGroup>
 
