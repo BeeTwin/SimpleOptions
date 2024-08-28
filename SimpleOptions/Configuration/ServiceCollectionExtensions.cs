@@ -15,7 +15,7 @@ public static class ServiceCollectionExtensions
     /// <param name="services">The <see cref="IServiceCollection"/> instance.</param>
     /// <param name="configuration">The <see cref="IConfiguration"/> instance used to configure the options.</param>
     /// <returns>The <see cref="IServiceCollection"/> instance, allowing for method chaining.</returns>
-    public static IServiceCollection ConfigureOption<TOptions>(this IServiceCollection services, IConfiguration configuration)
+    public static IServiceCollection AddConfigurationOptions<TOptions>(this IServiceCollection services, IConfiguration configuration)
         where TOptions : class, IConfigurationOptions
     {
         ConfigurationHelper.Configure<TOptions>(services, configuration);
@@ -30,7 +30,7 @@ public static class ServiceCollectionExtensions
     /// <param name="configuration">The <see cref="IConfiguration"/> instance used to configure the options.</param>
     /// <param name="option">An output parameter that will contain the configured options instance.</param>
     /// <returns>The <see cref="IServiceCollection"/> instance, allowing for method chaining.</returns>
-    public static IServiceCollection ConfigureOption<TOptions>(this IServiceCollection services, IConfiguration configuration, out TOptions option)
+    public static IServiceCollection AddConfigurationOptions<TOptions>(this IServiceCollection services, IConfiguration configuration, out TOptions option)
         where TOptions : class, IConfigurationOptions
     {
         option = ConfigurationHelper.ConfigureAndGet<TOptions>(services, configuration);

@@ -13,7 +13,7 @@ public static class ApplicationBuilderExtensions
     /// <typeparam name="TOptions">The type of options to configure, which must implement <see cref="IConfigurationOptions"/>.</typeparam>
     /// <param name="builder">The <see cref="IHostApplicationBuilder"/> instance.</param>
     /// <returns>The <see cref="IHostApplicationBuilder"/> instance, allowing for method chaining.</returns>
-    public static IHostApplicationBuilder ConfigureOption<TOptions>(this IHostApplicationBuilder builder)
+    public static IHostApplicationBuilder AddConfigurationOptions<TOptions>(this IHostApplicationBuilder builder)
         where TOptions : class, IConfigurationOptions
     {
         ConfigurationHelper.Configure<TOptions>(builder.Services, builder.Configuration);
@@ -27,7 +27,7 @@ public static class ApplicationBuilderExtensions
     /// <param name="builder">The <see cref="IHostApplicationBuilder"/> instance.</param>
     /// <param name="option">An output parameter that will contain the configured options instance.</param>
     /// <returns>The <see cref="IHostApplicationBuilder"/> instance, allowing for method chaining.</returns>
-    public static IHostApplicationBuilder ConfigureOption<TOptions>(this IHostApplicationBuilder builder, out TOptions option)
+    public static IHostApplicationBuilder AddConfigurationOptions<TOptions>(this IHostApplicationBuilder builder, out TOptions option)
         where TOptions : class, IConfigurationOptions
     {
         option = ConfigurationHelper.ConfigureAndGet<TOptions>(builder.Services, builder.Configuration);
