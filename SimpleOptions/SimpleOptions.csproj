@@ -5,16 +5,16 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <PackageId>SimpleOptions</PackageId>
-        <Version>1.1.0</Version>
+        <Version>1.1.1</Version>
         <Authors>BeeTwin</Authors>
         <Description>
             A .NET library for seamless configuration management using IOptions.
-            It provides utility methods to configure options from configuration sources 
-            and integrate them into the service collection and application builder. 
-            This library simplifies the process of setting up configuration options in a .NET application 
+            It provides utility methods to configure options from configuration sources
+            and integrate them into the service collection and application builder.
+            This library simplifies the process of setting up configuration options in a .NET application
             by leveraging generics and extension methods.
         </Description>
-        <PackageTags>configuration;options;dependency_injection;</PackageTags>
+        <PackageTags>configuration;options;dependency_injection;dependency;injection;config</PackageTags>
         <RepositoryUrl>https://github.com/BeeTwin/SimpleOptions</RepositoryUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
