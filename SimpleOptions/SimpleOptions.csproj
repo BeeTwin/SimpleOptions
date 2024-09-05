@@ -17,6 +17,7 @@
         <PackageTags>configuration;options;dependency_injection;dependency;injection;config</PackageTags>
         <RepositoryUrl>https://github.com/BeeTwin/SimpleOptions</RepositoryUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>
